@@ -1,0 +1,60 @@
+.box {
+    border: 3px solid black;
+    width: 100%;
+    height: 400px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.red, .green, .blue {
+    background-color: red;
+    float: left;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 5px solid white;
+}
+
+.red {
+    background-color: #893F3E;
+}
+
+.green {
+    background-color: #568D4A;
+}
+
+.blue {
+    background-color: #274DB0;
+}
+
+pre {
+font-family: 'Courier New', Courier, monospace;
+color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .red, .green, .blue {
+        width: 100%;
+    }
+    .box {
+        height: 1000px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .red {
+        width: 100%;
+    }
+    .green, .blue {
+        width: 50%;
+    }
+    .box {
+        height: 700px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .red, .green, .blue {
+        width: 33.33%;
+    }
+}
